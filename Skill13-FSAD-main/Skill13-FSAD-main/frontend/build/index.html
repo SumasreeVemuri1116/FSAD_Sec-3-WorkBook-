@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>FullStack App</title>
+</head>
+<body>
+<h1>React Production Build Running ✅</h1>
+<script>
+fetch('/api/test')
+.then(res=>res.text())
+.then(data=>{
+document.body.innerHTML += "<p>API Response: "+data+"</p>"
+})
+.catch(()=>{
+document.body.innerHTML += "<p>Backend not connected ❌</p>"
+})
+</script>
+</body>
+</html>
